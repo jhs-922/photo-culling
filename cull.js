@@ -142,7 +142,7 @@ async function main() {
   --dry-run             복사 없이 리포트만 생성
 
 지원 포맷: JPEG, PNG, HEIC/HEIF, TIFF (RAW 원본은 미지원)`);
-    process.exit(inputDir ? 0 : 1);
+    process.exit(args.help || args.h ? 0 : 1);
   }
 
   const outDir = path.resolve(args.out || './selected');
